@@ -1,40 +1,29 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# bitcoin_utils_flutter
+A simple flutter package for converting xpubs and xprvs to different versions.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## How to Use
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+To use the `bitcoin_utils_flutter` package in your project, add it as a dependency in your project's pubspec.yaml:
 
 ```dart
-const like = 'sample';
+dependencies:
+  bitcoin_utils_flutter: 
+ ```
+  
+## Examples  
+### Converting xPub to zPub
+
+```dart
+import 'package:bitcoin_utils/xyzpub.dart';
+
+// ....
+  const xPub =
+        'xpub6BosfCnifzxcFwrSzQiqu2DBVTshkCXacvNsWGYJVVhhawA7d4R5WSWGFNbi8Aw6ZRc1brxMyWMzG3DSSSSoekkudhUd9yLb6qx39T9nMdj';
+  const expectedZPub =
+        "zpub6qUQGY8YyN3ZxYEgf8J6KCQBqQAbdSWaT9RK54L5FWTTh8na8NkCkZpYHnWt7zEwNhqd6p9Utq562cSZsqGqFE87NNsUKnyZeJ5KvbhfC8E";
+
+  final result = convertVersion(xPub, Version.zPub);
+  expect(result, expectedZPub);
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
-# bitcoin-utils
+Please see `/test/bitcoin_utils_test.dart` for more examples

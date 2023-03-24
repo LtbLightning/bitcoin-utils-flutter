@@ -1,5 +1,4 @@
 import 'package:bitcoin_utils/xyzpub.dart';
-import 'package:bitcoin_utils/xyzpub/exception/argument_exception.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
