@@ -1,5 +1,5 @@
 # bitcoin_utils_flutter
-A simple flutter package for converting xpubs and xprvs to different versions.
+A flutter package for converting xpubs and xprvs to different versions.
 
 
 ## How to Use
@@ -15,7 +15,7 @@ dependencies:
 ### Converting xPub to zPub
 
 ```dart
-import 'package:bitcoin_utils/xyzpub.dart';
+import 'package:bitcoin_utils_flutter/xyzpub.dart';
 
 // ....
   const xPub =
@@ -26,4 +26,4 @@ import 'package:bitcoin_utils/xyzpub.dart';
   final result = convertVersion(xPub, Version.zPub);
   expect(result, expectedZPub);
 ```
-Please see `/test/bitcoin_utils_test.dart` for more examples
+Please see `/test/bitcoin_utils_test.dart` for more usage examples

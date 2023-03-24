@@ -1,20 +1,19 @@
-name: bitcoin_utils
-description: A new Flutter project.
+name: bitcoin_utils_flutter
+description: A flutter package for converting xpubs and xprvs to different versions.
 version: 0.0.1
-homepage:
+homepage: https://github.com/LtbLightning/bitcoin-utils
+
 
 environment:
   sdk: '>=2.19.4 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
-
-  bs58check: ^1.0.2
-
   flutter:
     sdk: flutter
+  bs58check: ^1.0.2
   freezed_annotation: ^2.2.0
-  googleapis:
+  lints: ^2.0.1
 
 dev_dependencies:
   flutter_test:
