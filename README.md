@@ -1,21 +1,21 @@
-# bitcoin_utils_flutter
+# bitcoin_utils
 A flutter package for converting xpubs and xprvs to different versions.
 
 
 ## How to Use
 
-To use the `bitcoin_utils_flutter` package in your project, add it as a dependency in your project's pubspec.yaml:
+To use the `bitcoin_utils` package in your project, add it as a dependency in your project's pubspec.yaml:
 
 ```dart
 dependencies:
-  bitcoin_utils_flutter: 
+  bitcoin_utils: 
  ```
   
 ## Examples  
 ### Converting xPub to zPub
 
 ```dart
-import 'package:bitcoin_utils_flutter/xyzpub.dart';
+import 'package:bitcoin_utils/xyzpub.dart';
 
 // ....
   const xPub =

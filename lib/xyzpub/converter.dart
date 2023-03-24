@@ -1,7 +1,7 @@
 import 'dart:core';
 import 'dart:typed_data';
 
-import 'package:bitcoin_utils_flutter/xyzpub.dart';
+import 'package:bitcoin_utils/xyzpub.dart';
 import 'package:bs58check/bs58check.dart' as bs58check;
 
 Uint8List replaceVersionBytes(List<int> bytes, Version target) {
