@@ -27,3 +27,10 @@ import 'package:bitcoin_utils/xyzpub.dart';
   expect(result, expectedZPub);
 ```
 Please see `/test/bitcoin_utils_test.dart` for more usage examples
+
+## Credits and References
+This package is based on the xyzpub Rust crate: https://docs.rs/xyzpub/0.3.0/xyzpub/
+
+As more functionality and utilities are added, more references if any will be added here.
+
+There will be a React Native version of this package as well.
